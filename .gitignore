@@ -1,0 +1,23 @@
+node_modules/
+dist/
+.vite/
+.vercel/
+.env
+.env.*
+!.env.example
+.DS_Store
+*.log
+
+# IDE
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+
+# Private / medical data
+uploads/
+patient-data/
+medical-records/
+*.pdf
+*.csv
+*.xlsx

@@ -1,0 +1,921 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap");
+
+:root {
+  --admin-bg: #f7f5ef;
+  --admin-surface: #fffefa;
+  --admin-surface-soft: #faf9f4;
+
+  --admin-green: #285b48;
+  --admin-green-dark: #183f32;
+  --admin-green-mid: #4d8064;
+
+  --admin-sage: #e5eee2;
+  --admin-sage-dark: #c8dbc7;
+
+  --admin-terracotta: #b85b39;
+  --admin-terracotta-soft: #f8e7dc;
+
+  --admin-blue: #dcebee;
+  --admin-blue-text: #286077;
+
+  --admin-purple: #ebe5f1;
+  --admin-purple-text: #43519a;
+
+  --admin-border: #deddd5;
+  --admin-border-soft: #ebe9e1;
+
+  --admin-text: #29483e;
+  --admin-text-soft: #6f7974;
+  --admin-text-muted: #8b918d;
+}
+
+/* =========================================================
+   BASE
+========================================================= */
+
+.admin-portal {
+  min-height: 100vh;
+  background: var(--admin-bg);
+  color: var(--admin-text);
+  font-family: "DM Sans", sans-serif;
+}
+
+.admin-portal h1,
+.admin-portal h2,
+.admin-portal h3,
+.admin-portal h4 {
+  font-family: "Playfair Display", serif;
+}
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.admin-sidebar {
+  width: 216px;
+  background: #faf9f5;
+  border-right: 1px solid var(--admin-border);
+}
+
+.admin-brand {
+  padding: 18px 20px 14px;
+}
+
+.admin-brand-name {
+  font-family: "Playfair Display", serif;
+  font-size: 21px;
+  font-weight: 700;
+  color: var(--admin-green-dark);
+}
+
+.admin-brand-name span {
+  color: var(--admin-terracotta);
+}
+
+.admin-brand-subtitle {
+  margin-top: 1px;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 1.6px;
+  color: #65716b;
+}
+
+.admin-brand-description {
+  margin-top: 10px;
+  font-size: 9px;
+  line-height: 14px;
+  color: #707a75;
+}
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.admin-nav-group {
+  margin-top: 16px;
+}
+
+.admin-nav-label {
+  padding: 0 12px 7px;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+  color: #858b87;
+}
+
+.admin-nav-item {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+
+  width: 100%;
+  min-height: 34px;
+
+  padding: 7px 12px;
+
+  border-radius: 8px;
+
+  color: #50615a;
+  font-size: 10px;
+  font-weight: 500;
+
+  transition:
+    background 0.18s ease,
+    color 0.18s ease;
+}
+
+.admin-nav-item:hover {
+  background: #f0f3ed;
+  color: var(--admin-green);
+}
+
+.admin-nav-item.active {
+  background: #e7efe4;
+  color: var(--admin-green-dark);
+  font-weight: 600;
+}
+
+.admin-nav-item.active svg {
+  color: var(--admin-green);
+}
+
+/* =========================================================
+   TOP HEADER
+========================================================= */
+
+.admin-header {
+  height: 68px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 26px;
+
+  background: #fbfaf7;
+  border-bottom: 1px solid var(--admin-border);
+}
+
+.admin-header-title {
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--admin-green-dark);
+}
+
+.admin-header-subtitle {
+  font-size: 9px;
+  color: #7a827e;
+}
+
+/* =========================================================
+   SEARCH
+========================================================= */
+
+.admin-search {
+  width: 335px;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 9px 13px;
+
+  border: 1px solid #e1e0d8;
+  border-radius: 999px;
+
+  background: #ffffff;
+}
+
+.admin-search input {
+  width: 100%;
+  border: 0;
+  outline: none;
+
+  background: transparent;
+
+  font-size: 10px;
+  color: var(--admin-text);
+}
+
+.admin-search input::placeholder {
+  color: #9a9e9b;
+}
+
+/* =========================================================
+   MAIN CONTENT
+========================================================= */
+
+.admin-content {
+  padding: 20px 26px 28px;
+}
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.admin-hero {
+  position: relative;
+
+  min-height: 194px;
+
+  overflow: hidden;
+
+  border: 1px solid #d6ded1;
+  border-radius: 15px;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(239, 244, 234, 0.98) 0%,
+      rgba(238, 244, 233, 0.94) 52%,
+      rgba(228, 238, 223, 0.72) 100%
+    );
+}
+
+.admin-hero-content {
+  position: relative;
+  z-index: 5;
+
+  padding: 22px 42px;
+}
+
+.admin-hero-eyebrow {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #416959;
+}
+
+.admin-hero-title {
+  margin-top: 5px;
+
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  font-weight: 700;
+
+  color: var(--admin-green-dark);
+}
+
+.admin-hero-description {
+  max-width: 550px;
+
+  margin-top: 3px;
+
+  font-size: 11px;
+  line-height: 18px;
+
+  color: #415c51;
+}
+
+.admin-hospital-card {
+  width: 530px;
+  max-width: 100%;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  margin-top: 11px;
+  padding: 10px 13px;
+
+  border: 1px solid #d8ddd3;
+  border-radius: 11px;
+
+  background: rgba(255, 255, 255, 0.88);
+
+  box-shadow: 0 3px 10px rgba(50, 70, 60, 0.04);
+}
+
+.admin-hospital-label {
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #7b8580;
+}
+
+.admin-hospital-name {
+  margin-top: 2px;
+
+  font-size: 10px;
+  font-weight: 600;
+
+  color: #304b42;
+}
+
+/* =========================================================
+   BOTANICAL DECORATION
+========================================================= */
+
+.admin-hero-leaves {
+  position: absolute;
+
+  right: -15px;
+  bottom: -55px;
+
+  width: 360px;
+
+  opacity: 0.82;
+
+  pointer-events: none;
+}
+
+.admin-hero-quote {
+  position: absolute;
+
+  right: 335px;
+  top: 34px;
+
+  text-align: center;
+
+  font-family: "Playfair Display", serif;
+  font-size: 17px;
+  font-style: italic;
+  line-height: 24px;
+
+  color: #294d40;
+}
+
+.admin-hero-quote-line {
+  width: 30px;
+  height: 1px;
+
+  margin: 12px auto 0;
+
+  background: #71917d;
+}
+
+.admin-hero-mortar {
+  position: absolute;
+
+  right: 100px;
+  bottom: -20px;
+
+  width: 175px;
+  height: 150px;
+
+  transform: rotate(-7deg);
+}
+
+/* =========================================================
+   STAT CARDS
+========================================================= */
+
+.admin-stat-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 10px;
+
+  margin-top: 12px;
+}
+
+.admin-stat-card {
+  position: relative;
+
+  min-height: 99px;
+
+  overflow: hidden;
+
+  padding: 14px;
+
+  border: 1px solid var(--admin-border);
+  border-radius: 13px;
+
+  background: #fffefa;
+}
+
+.admin-stat-card.green {
+  background: #f4f8f1;
+}
+
+.admin-stat-card.terracotta {
+  background: #fcf4ed;
+}
+
+.admin-stat-card.blue {
+  background: #f0f5f6;
+}
+
+.admin-stat-card.purple {
+  background: #f5f2f8;
+}
+
+.admin-stat-icon {
+  width: 37px;
+  height: 37px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+}
+
+.admin-stat-card.green .admin-stat-icon {
+  background: #dcecdf;
+  color: #2e7157;
+}
+
+.admin-stat-card.terracotta .admin-stat-icon {
+  background: #f4dfce;
+  color: #ad5936;
+}
+
+.admin-stat-card.blue .admin-stat-icon {
+  background: #dcebed;
+  color: #286077;
+}
+
+.admin-stat-card.purple .admin-stat-icon {
+  background: #e8e1f0;
+  color: #43519a;
+}
+
+.admin-stat-title {
+  margin-top: 7px;
+
+  font-size: 10px;
+  font-weight: 600;
+
+  color: #40534b;
+}
+
+.admin-stat-value {
+  margin-top: 1px;
+
+  font-family: "Playfair Display", serif;
+  font-size: 26px;
+  font-weight: 700;
+
+  color: var(--admin-green-dark);
+}
+
+.admin-stat-subtitle {
+  font-size: 9px;
+  color: #7e8581;
+}
+
+/* =========================================================
+   CONTENT CARDS
+========================================================= */
+
+.admin-card {
+  border: 1px solid var(--admin-border);
+  border-radius: 14px;
+
+  background: #fffefa;
+
+  box-shadow:
+    0 1px 1px rgba(30, 50, 40, 0.02);
+}
+
+.admin-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  padding: 15px 15px 7px;
+}
+
+.admin-card-title {
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+  font-weight: 600;
+
+  color: #284b40;
+}
+
+.admin-card-subtitle {
+  margin-top: 1px;
+
+  font-size: 9px;
+  color: #7c847f;
+}
+
+.admin-card-body {
+  padding: 0 15px 15px;
+}
+
+/* =========================================================
+   DASHBOARD GRID
+========================================================= */
+
+.admin-chart-grid {
+  display: grid;
+
+  grid-template-columns: 1.2fr 0.8fr;
+
+  gap: 12px;
+
+  margin-top: 12px;
+}
+
+.admin-bottom-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 12px;
+
+  margin-top: 12px;
+}
+
+/* =========================================================
+   TEAM / QUEUE / KIOSK ROWS
+========================================================= */
+
+.admin-list-row {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  padding: 7px 9px;
+
+  border-radius: 10px;
+
+  background: #fafaf6;
+  border: 1px solid #efeee7;
+}
+
+.admin-avatar {
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #d9e8d8;
+
+  font-size: 10px;
+  font-weight: 600;
+
+  color: #356650;
+}
+
+.admin-row-name {
+  font-size: 10px;
+  font-weight: 600;
+  color: #344d44;
+}
+
+.admin-row-meta {
+  margin-top: 1px;
+
+  font-size: 8px;
+  color: #7d8581;
+}
+
+.admin-status {
+  margin-left: auto;
+
+  padding: 4px 8px;
+
+  border-radius: 999px;
+
+  font-size: 8px;
+  font-weight: 600;
+}
+
+.admin-status.online,
+.admin-status.active,
+.admin-status.completed {
+  background: #e1f0e5;
+  color: #3a6d55;
+}
+
+.admin-status.offline {
+  background: #f8e2dc;
+  color: #a84d35;
+}
+
+.admin-status.review {
+  background: #f9e4d8;
+  color: #a95335;
+}
+
+.admin-status.consultation {
+  background: #e5ebf7;
+  color: #50679a;
+}
+
+/* =========================================================
+   TABLES
+========================================================= */
+
+.admin-table-wrapper {
+  overflow: hidden;
+
+  border: 1px solid var(--admin-border);
+  border-radius: 14px;
+
+  background: #fffefa;
+}
+
+.admin-table {
+  width: 100%;
+
+  border-collapse: collapse;
+}
+
+.admin-table thead {
+  background: #f8f8f3;
+}
+
+.admin-table th {
+  padding: 11px 13px;
+
+  text-align: left;
+
+  border-bottom: 1px solid #e5e3dc;
+
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 1px;
+
+  color: #77807b;
+}
+
+.admin-table td {
+  padding: 12px 13px;
+
+  border-bottom: 1px solid #f0eee8;
+
+  font-size: 10px;
+
+  color: #53655d;
+}
+
+.admin-table tbody tr:hover {
+  background: #fbfbf8;
+}
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.admin-primary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+
+  padding: 9px 14px;
+
+  border: 0;
+  border-radius: 10px;
+
+  background: #326a53;
+
+  color: white;
+
+  font-size: 10px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: background 0.18s ease;
+}
+
+.admin-primary-button:hover {
+  background: #285a46;
+}
+
+.admin-secondary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+
+  padding: 9px 14px;
+
+  border: 1px solid #dddcd4;
+  border-radius: 10px;
+
+  background: white;
+
+  color: #50625a;
+
+  font-size: 10px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.admin-secondary-button:hover {
+  background: #f4f5f0;
+}
+
+/* =========================================================
+   CONFIGURATION CARDS
+========================================================= */
+
+.admin-config-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 13px;
+}
+
+.admin-config-card {
+  position: relative;
+
+  min-height: 170px;
+
+  padding: 18px;
+
+  border: 1px solid var(--admin-border);
+  border-radius: 15px;
+
+  background: #fffefa;
+
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease,
+    border-color 0.18s ease;
+}
+
+.admin-config-card:hover {
+  transform: translateY(-1px);
+
+  border-color: #c6d8c8;
+
+  box-shadow: 0 5px 15px rgba(45, 75, 60, 0.06);
+}
+
+.admin-config-icon {
+  width: 39px;
+  height: 39px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 11px;
+
+  background: #e5eee2;
+
+  color: #346750;
+}
+
+.admin-config-title {
+  margin-top: 13px;
+
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+  font-weight: 600;
+
+  color: #2b4d42;
+}
+
+.admin-config-description {
+  margin-top: 6px;
+
+  font-size: 9px;
+  line-height: 17px;
+
+  color: #78817d;
+}
+
+/* =========================================================
+   MODAL
+========================================================= */
+
+.admin-modal-overlay {
+  position: fixed;
+  inset: 0;
+
+  z-index: 100;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 16px;
+
+  background: rgba(24, 61, 50, 0.28);
+
+  backdrop-filter: blur(5px);
+}
+
+.admin-modal {
+  width: 100%;
+  max-width: 680px;
+  max-height: 90vh;
+
+  overflow-y: auto;
+
+  border: 1px solid #dddcd5;
+  border-radius: 24px;
+
+  background: #fcfcf9;
+
+  box-shadow: 0 25px 60px rgba(25, 55, 43, 0.15);
+}
+
+.admin-modal-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  padding: 17px 20px;
+
+  border-bottom: 1px solid #e7e5de;
+}
+
+.admin-modal-title {
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  font-weight: 600;
+
+  color: #244a3e;
+}
+
+.admin-modal-subtitle {
+  margin-top: 3px;
+
+  font-size: 9px;
+  line-height: 15px;
+
+  color: #7d8580;
+}
+
+.admin-modal-body {
+  padding: 20px;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1200px) {
+  .admin-stat-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .admin-bottom-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-config-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .admin-hero-quote {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .admin-sidebar {
+    width: 210px;
+  }
+
+  .admin-chart-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-content {
+    padding: 18px;
+  }
+
+  .admin-header {
+    padding: 0 18px;
+  }
+
+  .admin-search {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .admin-stat-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-config-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-hero-content {
+    padding: 20px;
+  }
+
+  .admin-hero-title {
+    font-size: 23px;
+  }
+
+  .admin-hospital-card {
+    width: 100%;
+  }
+
+  .admin-hero-leaves {
+    width: 260px;
+    right: -70px;
+  }
+}

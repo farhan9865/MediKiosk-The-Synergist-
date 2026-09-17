@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "DM Sans", Arial, sans-serif;
+  color: #173f35;
+  background: #f7f3e9;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  min-width: 320px;
+  background: #f7f3e9;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.font-serif {
+  font-family: "Playfair Display", Georgia, serif;
+}
+
+.leaf-decoration {
+  position: absolute;
+  pointer-events: none;
+  opacity: 0.72;
+}
+
+.leaf {
+  position: absolute;
+  width: 28px;
+  height: 58px;
+  border-radius: 100% 0 100% 0;
+  background: #b9cbb5;
+  transform-origin: bottom center;
+}
+
+.leaf:nth-child(1) {
+  transform: rotate(-35deg);
+}
+
+.leaf:nth-child(2) {
+  transform: rotate(5deg) translate(18px, -20px);
+  background: #8fa88f;
+}
+
+.leaf:nth-child(3) {
+  transform: rotate(38deg) translate(35px, -35px);
+  background: #c8d3c0;
+}
+
+.leaf:nth-child(4) {
+  transform: rotate(70deg) translate(52px, -42px);
+  background: #9db39b;
+}
+
+.botanical-stem {
+  position: absolute;
+  width: 2px;
+  height: 170px;
+  background: #91a48f;
+  transform: rotate(30deg);
+  transform-origin: bottom;
+}
