@@ -78,6 +78,63 @@ Future HIS / FHIR / ABDM Integration
 - Extensible Trividha / Ashtavidha / Dashavidha ontology
 - Controlled question flow instead of unrestricted medical interviewing
 
+
+## Prototype Screenshots
+
+### Patient Experience
+
+#### 1. Welcome Screen
+
+![MediKiosk Home](public/screenshots/home.png)
+
+#### 2. Language Selection
+
+![Language Selection](public/screenshots/language.png)
+
+#### 3. Patient Identification
+
+![Patient Identification](public/screenshots/patient-identify.png)
+
+#### 4. Consent
+
+![Consent](public/screenshots/consent.png)
+
+#### 5. Patient Demographics
+
+![Patient Demographics](public/screenshots/demographics.png)
+
+#### 6. Interaction Mode
+
+![Interaction Mode](public/screenshots/interaction-mode.png)
+
+#### 7. Adaptive Ayurveda History
+
+![Adaptive Ayurveda History](public/screenshots/history.png)
+
+#### 8. Document Upload
+
+![Document Upload](public/screenshots/documents.png)
+
+#### 9. History Review
+
+![History Review](public/screenshots/review.png)
+
+#### 10. History Complete
+
+![History Complete](public/screenshots/thank-you.png)
+
+---
+
+### Doctor Portal
+
+![MediKiosk Doctor Portal](public/screenshots/doctor-portal.png)
+
+---
+
+### Admin Portal
+
+![MediKiosk Admin Portal](public/screenshots/admin-portal.png)
+
 ### Four Interaction Modes
 
 | Mode | Experience |
